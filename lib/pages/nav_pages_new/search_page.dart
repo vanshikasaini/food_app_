@@ -152,14 +152,7 @@ class _SearchPageState extends State<SearchPage> {
                                 '',
                               ));
 
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailScreen(
-                              //           id: value.specificCateListObj.data
-                              //                   ?.drinks?[index].idDrink ??
-                              //               "23")),
-                              // );
+
                             },
                             child: Container(
                                 decoration: BoxDecoration(

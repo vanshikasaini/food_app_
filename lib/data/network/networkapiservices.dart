@@ -1,4 +1,4 @@
-import 'dart:convert';
+import 'dart:convert' as convert;
 import 'dart:io';
 
 import 'package:http/http.dart';
@@ -23,7 +23,7 @@ class NetworkApiService extends BaseApiService {
   }
 
   @override
-  Future getPostApiResponse(String url) async {
+  Future getGetApiResponse_(String url) async {
     dynamic responseJson;
 
     try {
@@ -39,7 +39,7 @@ class NetworkApiService extends BaseApiService {
   dynamic returnResponse(http.Response response) {
     switch (response.statusCode) {
       case 200:
-        dynamic responseJson = jsonDecode(response.body);
+        dynamic responseJson = convert.jsonDecode(response.body);
         return responseJson;
       case 400:
         throw BadRequestException(response.body.toString());

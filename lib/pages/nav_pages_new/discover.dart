@@ -189,11 +189,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                             '',
                           ));
 
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //       builder: (context) => const SearchPage(categoryName: "Cocktail",)),
-                      // );
+
                     },
                     child: AppSmallText(
                         text: "View all",
@@ -244,11 +240,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     categoriesObj.drinks[index].strCategory,
                     '',
                   ));
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) =>  SearchPage(categoryName:categoriesObj.drinks[index].strCategory)),
-              // );
+
             },
             child: Container(
               height: 350.0,
